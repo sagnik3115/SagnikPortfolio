@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAGNIK-Dev-portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth !important ;
+        }
+        .web{
+            background-image: url("/static/sbg.jpg");
+            background-size: cover;
+            transition: all 0.7s ease-in-out;
+        }        
+        body{
+            background-color: rgba(250, 235, 215, 0);
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            /* background-image: url("/static/bg1.jpg"); */
+            /* background-size: contain; */
+            background-repeat: no-repeat;
+            /* transition: all 0.7s ease-in-out; */
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            font-family: 'Poppins', sans-serif;
+            /* background-color: rgb(10, 82, 95); */
+            background-color: rgb(208, 235, 239);
+            color: rgb(17, 17, 18);
+            font-weight: bold;
+            position: fixed ;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0px 0px;
+            /* padding: 17px 40px */
+        }
+        nav ul li a{
+            position: relative;
+            font-weight: 500;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(17, 17, 17);
+            padding: 18px 40px;
+
+        }
+        nav ul li a:hover{
+            color: rgb(164, 195, 195);
+            border-bottom: 3px solid aliceblue;
+            
+            transition: all 0.2s ease-in-out;
+        }
+      
+        
+        .left{
+            font-size: 2rem;
+        }
+       
+
+        .firstsection{
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: space-around;
+            margin: 20px 0px;
+            align-items: center;
+        }
+        .firstsection >div{
+            width: 35%;
+            /* height: 400px; */
+        }
+        .leftsection1{
+            /* background-color: red; */
+            font-size: 2.5rem;
+            /* text-align: center; */
+            margin-left: 40px;
+            /* text-shadow: 3px 3px 5px black; */
+        }
+        .leftsection2{
+            display: flex;
+            justify-content: center;
+        }
+        .leftsection2 .bttn{
+        margin: 10px;
+        margin-left: 290px;
+        height: 50px;
+        width: 250px;
+        padding: 10px;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: aliceblue;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+       }
+       .leftsection2 .bttn:hover{
+       background-color: rgb(20, 112, 129) ;
+       color: aliceblue;
+       cursor: pointer;
+      
+       }
+       
+       .bttn img{
+        width: 25px;
+       }
+       .btn a{
+        text-decoration: none;
+       }
+      
+        .midsection img{
+            /* background-color: red; */
+            width: 100%;
+            margin-top: 90px;
+            transition: all 0.8s ease-out;
+            
+        }
+        .midsection img:hover{
+            transform: scale(1.08);
+           box-shadow: 0 0 15px #ffef1000;
+          
+            
+        }
+      
+        .rightsection img{
+           width: 100%;
+           margin: 0px 0px;
+        }
+        .purple{
+           color: rgb(115, 219, 235);
+           text-shadow: 3px 3px 5px black;
+        }
+        .text-grey{
+            color: gray;
+        }
+        #element{
+            color: rgb(113, 229, 249);
+            text-shadow: 2px 2px 7px black;
+        }
+       
+        
+        main hr{
+            border: 0;
+            border-radius: 5px;
+            background-color:rgb(20, 112, 129) ;
+            height: 6px;
+            margin: 40px 80px;
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: 40px auto;
+            height: 650px;
+          font-synthesis: style;
+          font-size: 20px;
+           font-weight: 500;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         line-height: 30px;
+         
+        }
+        .secondsection .box .me{
+            font-weight: bold;
+           color:  rgb(20, 112, 129);
+        }
+        .secondsection .box .school{
+            font-weight: bold;
+           color:  rgb(20, 112, 129);
+        }
+        .secondsection .box .college{
+            font-weight: bold;
+           color:  rgb(20, 112, 129);
+        }
+        a{
+            text-decoration: none;
+            color:  rgb(20, 112, 129);
+        }
+        .Utube{
+            max-width: 80vw;
+            margin: 40px auto;
+            height: 650px;
+            display: flex;
+        }
+        .riview{
+            margin:  auto;
+            /* padding: 60px 60px ; */
+            border: 3px solid rgba(255, 0, 0, 0);
+            border-radius: 10px;
+        }
+        .riview iframe {
+            box-shadow: 0px 0px 25px 4px rgba(128, 128, 128, 0.638);
+            border: 3px solid rgb(202, 195, 195);
+            border-radius: 30px;
+        }
+        .thirdsection{
+            max-width: 80vw;
+            margin: 40px auto;
+            height: 650px;
+            
+        }
+        .thirdsection h1{
+           font-size: 1.5rem;
+        }
+        .thirdsection .box{
+            background: rgb(180, 146, 83);
+            width: 78vw;
+            height: 10px;
+            margin: 90px auto;
+            display: flex;
+            flex-direction: row;
+            border-radius: 10px;
+           
+        }
+        .thirdsection .vertical{
+            background: rgb(83, 65, 32);
+            width: 5px;
+            height: 150px;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        .image-top{
+           width: 110px; 
+           position: relative;
+           bottom: 80px;
+           right: 50px;
+          margin-bottom: 10px;
+          box-sizing: border-box;
+        overflow: hidden;
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translatey(0px);
+        -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 3s ease-in-out infinite;
+          
+        }
+         /* Animation */
+         @-webkit-keyframes float {
+                    0% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(0px);
+                    }
+                    50% {
+                        /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+                        transform: translatey(-20px);
+                    }
+                    100% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(0px);
+                    }
+            }
+
+            @keyframes float {
+            0% {
+                transform: translatey(0px);
+            }
+            50% {
+            
+                transform: translatey(-20px);
+            }
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(242, 240, 240, 0);
+                transform: translatey(0px);
+            }
+            }
+
+        #image-top2{
+          
+        box-sizing: border-box;
+        overflow: hidden;
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translatey(0px);
+        -webkit-animation: floa 6s ease-in-out infinite;
+          animation: floa 3s ease-in-out infinite;
+          
+        }
+         /* Animation */
+         @-webkit-keyframes floa {
+                    0% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(-20px);
+                    }
+                    50% {
+                        /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+                        transform: translatey(0px);
+                    }
+                    100% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(-20px);
+                    }
+            }
+
+            @keyframes floa {
+            0% {
+                transform: translatey(-20px);
+            }
+            50% {
+            
+                transform: translatey(0px);
+            }
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(242, 240, 240, 0);
+                transform: translatey(-20px);
+            }
+            }
+        #image-top4{
+          
+        box-sizing: border-box;
+        overflow: hidden;
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translatey(0px);
+        -webkit-animation: floa 6s ease-in-out infinite;
+          animation: flo 3s ease-in-out infinite;
+          
+        }
+         /* Animation */
+         @-webkit-keyframes flo {
+                    0% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(-20px);
+                    }
+                    50% {
+                        /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+                        transform: translatey(0px);
+                    }
+                    100% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(-20px);
+                    }
+            }
+
+            @keyframes flo {
+            0% {
+                transform: translatey(-20px);
+            }
+            50% {
+            
+                transform: translatey(0px);
+            }
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(242, 240, 240, 0);
+                transform: translatey(-20px);
+            }
+            }
+
+       
+
+        #image-top2{
+           width: 100px; 
+           position: relative;
+           bottom: 80px;
+           right: 45px;
+           margin-bottom: 20px;
+        }
+        #image-top3{
+           width: 50px; 
+           position: relative;
+           bottom: 65px;
+           right: 23px;
+           margin-bottom: 40px;
+        }
+        #image-top4{
+           width: 50px; 
+           position: relative;
+           bottom: 65px;
+           right: 23px;
+           margin-bottom: 44px;
+        }
+        #image-top5{
+           width: 100px; 
+           position: relative;
+           bottom: 70px;
+           right: 50px;
+           margin-bottom: 20px;
+        }
+        .vertical-title{
+           
+            position: relative; 
+            top: 25px;
+             width: 130px;
+             font-weight: bold;
+             text-align: center;
+             margin-left: -50px;
+            
+        }
+        .vertical-title a{
+            color: black;
+            text-decoration: none;
+            transition: all 0.7s ease-in-out;
+        }
+        .vertical-desc{
+            position: relative;
+             top: 30px;
+             font-size: 15px;
+             width: 200px;
+             color: gray;
+             /* text-align: center; */
+             margin-left: -70px;
+             transition: all 0.7s ease-in-out;
+
+        }
+        .footersection{
+            background-color: aliceblue;
+        }
+        .footer{
+            margin: 0px auto;
+            width: 90%;
+            max-width: none;
+            border-top: 2px solid #000;
+            background-color: aliceblue;
+            padding-top: 0;
+            padding-bottom: 65px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .footer_first{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .footer .heading {
+            margin: 60px 60px;
+            margin-right: 280px;
+            /* font-family: 'Aclonica', sans-serif; */
+            text-decoration: none;
+            color: #000;
+        }
+        .footer .heading .name{
+            /* margin: 20px 20px; */
+            font-family: 'Aclonica', sans-serif;
+            font-size: 25px;
+            text-decoration: none;
+            color: #000;
+        }
+        
+
+
+        .footer .social{
+            /* position: relative; */
+
+            top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer .social_links{
+            margin: 20px;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer .social_links a{
+           text-decoration: none;
+           color: #000;
+           height: 50px;
+           width: 50px;
+           transition: all 0.2s ease-out;
+        }
+       
+        .footer .social_links a.youtube{
+          background-image: url("/static/youtube.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.instagram{
+            background-image: url("/static/instagram.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.linkedin{
+            background-image: url("/static/linkedin.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.facebook{
+            background-image: url("/static/facebook.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.twitter{
+            background-image: url("/static/twitter.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+
+        }
+        .footer .social_links a:hover{
+            transform: scale(1.1);
+           box-shadow: 0 0 15px #ffef1000;
+           
+        }
+        .sr_only {
+            width: 1px;
+            height: 1px;
+            white-space: nowrap;
+            border: 0 solid transparent;
+            margin-top: -1px;
+            padding: 0;
+            display: block;
+            position: absolute;
+            overflow: hidden;
+          }
+
+          .footer .links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-items: center; */
+            height: 350px;
+            
+        }
+       
+        .footer .links .use_links{
+            text-decoration: none;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* align-items: center; */
+            padding-left: 100px ;
+        }
+        .footer .links .use_links a{
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+
+        }
+       .footer .contact_form{
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       }
+       .form{
+       margin: 0px 50px;
+       
+       }
+       .form .formfinal{
+         display: flex;
+         flex-direction: column;
+       }
+       .form .form1{
+        display: flex;
+        justify-content: space-between;
+        width: 104%;
+        
+        
+       }
+    
+
+
+       /* form */
+       .container form{
+  padding: 0px 0 0 0;
+  margin: -38px 58px;
+}
+.container form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+ outline: none;
+ box-sizing: border-box;
+ 
+  display: block;
+  width: 100%;
+  height: 99%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+  background-color: #00000000;
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea{
+  resize: none;
+  
+  padding-top: 10px;
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #10101000;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #bbbfc0, #0f7376, #b7dbdf, #0b5267);
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
+.submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  .container .text{
+    font-size: 30px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+}
+    .copyright{
+        background-color: aliceblue;
+    }
+   .copy{
+    height: 100px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 20px;
+    border-top: 2px solid black;
+    width: 80%;
+    margin: 0px auto;
+   }
+
+
+
+   /* dark */
+   nav .right ul li .mode{
+   width: 60px;
+   height: 40px;
+   
+   background-color: rgba(255, 255, 255, 0) ;
+   background-image: url(/static/night-mode.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   transition: all 0.7s ease-in-out;
+   }
+   nav .right ul li .mode:hover{
+    cursor: pointer;
+   
+   }
+   .dark{
+    background-color: #000;
+    color: aliceblue;
+    /* transition: all 0.7s ease-in-out; */
+     
+    .web{
+        background-image: url("/static/dark-bg.avif");
+        background-size: cover;
+        /* transition: all 0.7s ease-in-out; */
+    }
+    .right ul li .mode{
+        width: 60px;
+      height: 40px;
+     background-color: rgba(240, 248, 255, 0);
+     background-image: url("/static/light-mode.png");
+      }
+    .copy{
+        color: #000;
+    }
+    .social_head{
+        color: #000;
+    }
+    
+     .input-data label{
+ 
+     color: rgb(17, 17, 17);
+ 
+      }
+      .contact{
+        color: #000;
+      }
+    .hr{
+
+            background-color:rgb(168, 224, 234) ;
+           
+        }
+
+        .vertical-title a{
+            color: rgb(246, 244, 244);
+            
+        }
+        .vertical-desc{
+           
+             color: rgb(202, 200, 200);
+             
+
+        }
+   }
+        
+    </style>
+
+
+</head>
+<body>
+  <div class="web">
+
+  
+    <header>    
+        <nav>
+            <div class="left">SAGNIK's Portfolio</div>
+            <div class="right">
+                <ul> 
+                    <li><div class="mode" onclick="Dark()"></div></li>
+                    <li href="/"><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                
+                <div class="leftsection1">
+                    Hi , My name is <span class="purple">Sagnik</span>
+                    <div>I am a passionate</div>
+                    <span id="element"></span>
+                </div>
+                <div class="leftsection2">
+                    <div class="btn">
+                      <a href="/download/sagnik-sign.pdf" download="sagnik">  <button class="bttn" type="submit"><img src="/static/edu-download.png" alt="">Download resume</button> </a>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="midsection">
+                <img src="/static/sagnik_bg.png" alt="">
+            </div>
+            <div class="rightsection">
+                <img src="/static/bg3.webp" alt="">
+            </div>
+        </section>
+        <hr class="hr">
+        <section class="secondsection">
+            <span class="text-grey">About me</span>
+            <h1>Welcome to my website</h1>
+
+            <div class="box">
+                <h4>**Welcome to the Inspiring Journey of Sagnik Modak!**</h4>
+
+                   <p> Greetings to all visitors,</p>  
+                    <span> 
+                   <p>I am <span class="me">Sagnik Modak</span>, and I am delighted to have you here on my website!</p> 
+                    <p>
+                        My journey from a mischievous and underperforming student to where I stand today has been a transformational one. In my early years, I was known for my playful nature and struggled academically. Until class 6, I heavily relied on my parents to read and study, merely listening to their teachings to pass exams.
+                    </p>
+                  
+                    <p>
+                        Everything changed when I got the golden opportunity to study at <span class="school"><a href="https://navodaya.gov.in/nvs/en/Home1">Jawahar Navodaya Vidyalaya (JNV)</a></span>, one of India's premier government schools. From class 6 to 10, I resided in the JNV hostel, an experience that would redefine my life forever. It was here that my mindset began to evolve, and I gradually developed into a more responsible and committed student.
+                    </p>
+                   
+                    <p>
+                        Throughout those formative years at JNV, I discovered a newfound passion for learning and a drive to excel academically. The nurturing environment, exceptional educators, and diverse peers contributed significantly to my growth as a student and as an individual.
+                    </p>
+                    
+                    
+                    With determination and hard work, I not only became an average student but also secured a place in one of India's prestigious institutions - the <span class="college"><a href="https://www.iiitbh.ac.in/">Indian Institute of Information Technology (IIIT) Bhagalpur</a></span> . Currently, I am pursuing my dreams as an undergraduate student in the field of Computer Science Engineering.
+                    
+                    I created this platform to share my experiences, insights, and knowledge gained throughout this incredible journey. My goal is to inspire and motivate students from all walks of life to embrace their unique paths and realize their fullest potential through education, perseverance, and the pursuit of their passions.
+                    
+                    I invite you to explore the various sections of my website, where you will find captivating stories, valuable resources, and a supportive community that fosters growth and positivity.
+                    
+                    Thank you for being a part of this journey with me, and I look forward to connecting with each one of you!
+                    
+                    Best regards,
+                    
+                    Sagnik Modak</span>
+            </div>
+        </section>
+        <hr class="hr">
+        <section class="Utube">
+            <div class="riview">
+                <iframe width="960" height="515"  src="https://www.youtube.com/embed/1UBi50V04Ow?si=GWDiywy_7w7Slvfi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        <hr class="hr">
+
+        <section class="thirdsection">
+            <span class="text-grey">What have I done so far ..?</span>
+            <h1>Work Experience</h1>
+            
+            <div class="box">
+               <div class="vertical">
+                    <img src="/static/deve8.webp" alt="" class="image-top">
+                    <div class="vertical-title">
+                     <a href="">HTML developer</a>   
+                    </div>
+                    <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eveniet eaque quaerat dolor totam esse dolorem aliquid cum dolorum porro?
+                    </div>
+               </div>
+               <div class="vertical">
+                    <img src="/static/deve2.png" alt="" class="image-top" id="image-top2">
+                    <div class="vertical-title">
+                     <a href="">JS developer</a>   
+                     
+                    </div>
+                    <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eveniet eaque quaerat dolor totam esse dolorem aliquid cum dolorum porro?
+                    </div>
+               </div>
+               <div class="vertical">
+                    <img src="/static/deve6.png" alt="" class="image-top" id="image-top3">
+                    <div class="vertical-title">
+                     <a href="">CSS developer</a>   
+                     
+                    </div>
+                    <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eveniet eaque quaerat dolor totam esse dolorem aliquid cum dolorum porro?
+                    </div>
+               </div>
+               <div class="vertical">
+                    <img src="/static/deve7.webp" alt="" class="image-top" id="image-top4">
+                    <div class="vertical-title">
+                     <a href="">12 and JEE</a>   
+                     
+                    </div>
+                    <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eveniet eaque quaerat dolor totam esse dolorem aliquid cum dolorum porro?
+                    </div>
+               </div>
+               <div class="vertical">
+                    <img src="/static/deve9.webp" alt="" class="image-top" id="image-top5">
+                    <div class="vertical-title">
+                     <a href=""> Mind developer (Era of JNV)</a>   
+                      
+                    </div>
+                    <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eveniet eaque quaerat dolor totam esse dolorem aliquid cum dolorum porro?
+                    </div>
+               </div>
+              
+            </div>
+        </section>
+        <section class="footersection">
+            <div class="footer">
+                <div class="footer_first">
+                    <div class="heading">
+                        <a class="name" href="/">
+                          <p>SAGNIK MODAK</p> 
+                        </a>
+                        <p>since 2002</p>
+                    </div>
+
+                    <div class="social">
+                        <div class="social_head"><h2>MY Social Media</h2></div>
+                        <div class="social_links">
+                            <a href="https://www.youtube.com/@sagnikmodak3124" class="youtube"> 
+                                <div  class="sr_only">youtube</div>
+                            </a>
+                            <a href="https://www.instagram.com/sagnik3124/" class="instagram">
+                                 <div class="sr_only">instagram</div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sagnikmodak/" class="linkedin">
+                                 <div class="sr_only">linkedin</div>
+                            </a>
+                            <a href="https://www.facebook.com/sagnik3124/" class="facebook">
+                                 <div class="sr_only">facebook</div>
+                            </a>
+                            <a href="https://twitter.com/SagnikModak3124"  class="twitter">
+                                 <div class="sr_only">twitter</div>
+                            </a>
+                        </div>
+                       
+        
+                    </div>
+                </div>
+                
+                <div class="links">
+                    <div class="uselinks">
+                        <div class="use_links">
+                            <a href="/">Home</a>
+                            <a href="/">About</a>
+                            <a href="/">services</a>
+                            <a href="/">Projects</a>
+                            <a href="/">History</a>
+                        </div>
+                      
+                    </div>
+                    <div class="contact_form">
+                        <div class="contact">
+                            <div class="contact1">
+                                <span>call me -</span>
+                                <h2>+91 7864083150</h2>
+                            </div>
+                            <div class="contact2">
+                                <span>Mail me -</span>
+                                <h2>sagnikmodak31@gmail.com</h2>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <form action="/contact"  method="post">
+                                <div class="form-row">
+                                   <div class="input-data">
+                                      <input type="text" name="f_name" required>
+                                      <div class="underline"></div>
+                                      <label for="">First Name</label>
+                                   </div>
+                                   <div class="input-data">
+                                      <input type="text" name="l_name" required>
+                                      <div class="underline"></div>
+                                      <label for="">Last Name</label>
+                                   </div>
+                                </div>
+                                <div class="form-row">
+                                   <div class="input-data">
+                                      <input type="text" name="email" required>
+                                      <div class="underline"></div>
+                                      <label for="">Email Address</label>
+                                   </div>
+                                   <div class="input-data">
+                                      <input type="text" name="subject" required>
+                                      <div class="underline"></div>
+                                      <label for="">Suject Name</label>
+                                   </div>
+                                </div>
+                                <div class="form-row">
+                                <div class="input-data textarea">
+                                   <textarea rows="8" cols="80" type="text" name="suggestion" required></textarea>
+                                   <br />
+                                   <div class="underline"></div>
+                                   <label for="">Write your message</label>
+                                   <br />
+                                   <div class="submit-btn">
+                                      <div class="input-data">
+                                         <div class="inner"></div>
+                                         <input type="submit" value="submit">
+                                      </div>
+                                   </div>
+                             </form>
+                        </div>
+                    </div>   
+                </div>
+                 
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="copy">
+                <p class="copyright">Copyright © 2023, Sagnik Inc. All rights reserved.</p>
+            </div>
+        </section>
+        
+       
+    </main>
+</div>  
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+
+    var typed = new Typed('#element', {
+      strings: ['web developer', 'video editor', 'web designer','debater'],
+      typeSpeed: 100,
+    });
+
+     //dark
+     function Dark() {
+            let element = document.body;
+            element.classList.toggle("dark");
+        }
+  </script>
+</body>
+</html>
