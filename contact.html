@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth !important ;
+        }  
+          nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(10, 82, 95);
+            color: aliceblue;
+            font-weight: bold;
+            position: fixed ;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0px 0px;
+            /* padding: 17px 40px */
+        }
+        nav ul li a{
+            position: relative;
+            font-weight: 500;
+            font-size: 20px;
+            text-decoration: none;
+            color: aliceblue;
+            padding: 18px 40px;
+
+        }
+        nav ul li a:hover{
+            color: rgb(164, 195, 195);
+            border-bottom: 3px solid aliceblue;
+            transition-duration: 0.2s;
+        }
+        
+        .left{
+            font-size: 2rem;
+        }
+
+
+        /* contact_form */
+      .contact_form{
+        margin: 0px auto;
+        margin-bottom: 200px;
+        width: 1000px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: 'Poppins', sans-serif;
+
+        
+       }
+       .form{
+       margin: 0px 50px;
+       }
+       .contact{
+        text-align: center;
+        height: 200px;
+        margin: 100px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+       }
+
+
+       /* form */
+       .container form{
+  padding: 0px 0 0 0;
+  margin: -38px 58px;
+}
+.container form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+ outline: none;
+ box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 99%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+  background-color: #00000000;
+  
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #ffffff00;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #bbbfc0, #0f7376, #b7dbdf, #0b5267);
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
+.submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  .container .text{
+    font-size: 30px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+}
+
+
+  /* footer */
+  .footersection{
+            background-color: aliceblue;
+            /* height: 300px; */
+        }
+        .footer{
+            margin: 0px auto;
+            margin-top: 50px;
+            width: 90%;
+            height: 250px;
+            max-width: none;
+            border-top: 2px solid #000;
+            background-color: aliceblue;
+            padding-top: 0;
+            /* padding-bottom: 65px; */
+            display: flex;
+            flex-direction: column;
+
+        }
+        .footer_first{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .footer .heading {
+            margin: 60px 60px;
+            margin-right: 280px;
+            /* font-family: 'Aclonica', sans-serif; */
+            text-decoration: none;
+            color: #000;
+        }
+        .footer .heading .name{
+            /* margin: 20px 20px; */
+            font-family: 'Aclonica', sans-serif;
+            font-size: 25px;
+            text-decoration: none;
+            color: #000;
+        }
+        
+
+
+        .footer .social{
+            /* position: relative; */
+
+            top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer .social_links{
+            margin: 20px;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer .social_links a{
+           text-decoration: none;
+           color: #000;
+           height: 50px;
+           width: 50px;
+           transition: all 0.2s ease-out;
+        }
+       
+        .footer .social_links a.youtube{
+          background-image: url("/static/youtube.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.instagram{
+            background-image: url("/static/instagram.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.linkedin{
+            background-image: url("/static/linkedin.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.facebook{
+            background-image: url("/static/facebook.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.twitter{
+            background-image: url("/static/twitter.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+
+        }
+        .footer .social_links a:hover{
+            transform: scale(1.1);
+           box-shadow: 0 0 15px #ffef1000;
+           
+        }
+        .sr_only {
+            width: 1px;
+            height: 1px;
+            white-space: nowrap;
+            border: 0 solid transparent;
+            margin-top: -1px;
+            padding: 0;
+            display: block;
+            position: absolute;
+            overflow: hidden;
+          }
+
+          .footer .links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-items: center; */
+            height: 350px;
+            
+        }
+       
+        .footer .links .use_links{
+            text-decoration: none;
+            width: 500px;
+            height: 50px;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-items: center; */
+            padding-left: 100px ;
+            padding-bottom: 30px;
+           
+        }
+        .footer .links .use_links a{
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+
+        }
+    .copyright{
+        background-color: aliceblue;
+    }
+   .copy{
+    height: 50px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 20px;
+    border-top: 2px solid black;
+    width: 80%;
+    margin: 0px auto;
+    /* margin-top: 30px; */
+   }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">SAGNIK's Portfolio</div>
+            <div class="right">
+                <ul> 
+                    <li href="/"><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/contact">Contact Me</a></li>
+                </ul>
+            </div>
+           </nav>
+      </header> 
+        <section class="firstsection">
+            <div class="contact_form">
+                <div class="contact">
+                    <div class="contact1">
+                        <span>call me -</span>
+                        <h2>+91 7864083150</h2>
+                    </div>
+                    <div class="contact2">
+                        <span>Mail me -</span>
+                        <h2>sagnikmodak31@gmail.com</h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <form action="/contact"  method="post">
+                        <div class="form-row">
+                           <div class="input-data">
+                              <input type="text" name="f_name" required>
+                              <div class="underline"></div>
+                              <label for="">First Name</label>
+                           </div>
+                           <div class="input-data">
+                              <input type="text" name="l_name" required>
+                              <div class="underline"></div>
+                              <label for="">Last Name</label>
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <div class="input-data">
+                              <input type="text" name="email" required>
+                              <div class="underline"></div>
+                              <label for="">Email Address</label>
+                           </div>
+                           <div class="input-data">
+                              <input type="text" name="subject" required>
+                              <div class="underline"></div>
+                              <label for="">Suject Name</label>
+                           </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="input-data textarea">
+                           <textarea rows="8" cols="80" type="text" name="suggestion" required></textarea>
+                           <br />
+                           <div class="underline"></div>
+                           <label for="">Write your message</label>
+                           <br />
+                           <div class="submit-btn">
+                              <div class="input-data">
+                                 <div class="inner"></div>
+                                 <input type="submit" value="submit">
+                              </div>
+                           </div>
+                     </form>
+                </div>
+            </div>
+        </section>
+        <section class="footersection">
+            <div class="footer">
+                <div class="footer_first">
+                    <div class="heading">
+                        <a class="name" href="/">
+                          <p>SAGNIK MODAK</p> 
+                        </a>
+                        <p>since 2002</p>
+                    </div>
+
+                    <div class="social">
+                        <div class="social_head"><h2>MY Social Media</h2></div>
+                        <div class="social_links">
+                            <a href="https://www.youtube.com/@sagnikmodak3124" class="youtube"> 
+                                <div  class="sr_only">youtube</div>
+                            </a>
+                            <a href="https://www.instagram.com/sagnik3124/" class="instagram">
+                                 <div class="sr_only">instagram</div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sagnikmodak/" class="linkedin">
+                                 <div class="sr_only">linkedin</div>
+                            </a>
+                            <a href="https://www.facebook.com/sagnik3124/" class="facebook">
+                                 <div class="sr_only">facebook</div>
+                            </a>
+                            <a href="https://twitter.com/SagnikModak3124"  class="twitter">
+                                 <div class="sr_only">twitter</div>
+                            </a>
+                        </div>
+                       
+        
+                    </div>
+                </div>
+
+                <div class="links">
+                    <div class="uselinks">
+                        <div class="use_links">
+                            <a href="/">Home</a>
+                            <a href="/">About</a>
+                            <a href="/">services</a>
+                            <a href="/">Projects</a>
+                            <a href="/">History</a>
+                        </div>
+                      
+                    </div> 
+                </div>
+                 
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="copy">
+                <p class="copyright">Copyright © 2023, Sagnik Inc. All rights reserved.</p>
+            </div>
+        </section>
+</body>
+</html>
