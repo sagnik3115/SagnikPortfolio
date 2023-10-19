@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth !important ;
+        
+            font-family: 'Poppins', sans-serif;
+
+        }   
+          nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(10, 82, 95);
+            color: aliceblue;
+            font-weight: bold;
+            position: fixed ;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0px 0px;
+            /* padding: 17px 40px */
+        }
+        nav ul li a{
+            position: relative;
+            font-weight: 500;
+            font-size: 20px;
+            text-decoration: none;
+            color: aliceblue;
+            padding: 18px 40px;
+
+        }
+        nav ul li a:hover{
+            color: rgb(164, 195, 195);
+            border-bottom: 3px solid aliceblue;
+            transition-duration: 0.2s;
+        }
+        
+        .left{
+            font-size: 2rem;
+        }
+        .firstsection .first{
+            display: flex;
+            flex-direction: row;
+        }
+        .firstsection .vertical{
+            background: rgb(180, 146, 83);
+            width: 10px;
+            height: 1700px;
+            margin:  100px 200px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        .firstsection .box{
+            background: rgb(83, 65, 32);
+            width: 250px;
+            height: 10px;
+            margin: auto 10px;
+           
+            border-radius: 10px;
+        }
+        .firstsection .des{
+            margin: 100px 50px;
+            margin-right: 200px;
+            
+            /* margin-left: 50px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .image-top{
+           width: 150px; 
+           position: relative;
+           top: 50px;
+           left: 50px;
+          margin-bottom: 10px;
+          box-sizing: border-box;
+        overflow: hidden;
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translatey(0px);
+        -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 3s ease-in-out infinite;
+          
+        }
+         /* Animation */
+         @-webkit-keyframes float {
+                    0% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(0px);
+                    }
+                    50% {
+                        /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+                        transform: translatey(-20px);
+                    }
+                    100% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(0px);
+                    }
+            }
+
+            @keyframes float {
+            0% {
+                transform: translatey(0px);
+            }
+            50% {
+            
+                transform: translatey(-20px);
+            }
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(242, 240, 240, 0);
+                transform: translatey(0px);
+            }
+            }
+
+        #image-top2{
+          
+        box-sizing: border-box;
+        overflow: hidden;
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translatey(0px);
+        -webkit-animation: floa 6s ease-in-out infinite;
+          animation: floa 3s ease-in-out infinite;
+          
+        }
+         /* Animation */
+         @-webkit-keyframes floa {
+                    0% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(-20px);
+                    }
+                    50% {
+                        /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+                        transform: translatey(0px);
+                    }
+                    100% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(-20px);
+                    }
+            }
+
+            @keyframes floa {
+            0% {
+                transform: translatey(-20px);
+            }
+            50% {
+            
+                transform: translatey(0px);
+            }
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(242, 240, 240, 0);
+                transform: translatey(-20px);
+            }
+            }
+        #image-top4{
+          
+        box-sizing: border-box;
+        overflow: hidden;
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translatey(0px);
+        -webkit-animation: floa 6s ease-in-out infinite;
+          animation: flo 3s ease-in-out infinite;
+          
+        }
+         /* Animation */
+         @-webkit-keyframes flo {
+                    0% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(-20px);
+                    }
+                    50% {
+                        /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+                        transform: translatey(0px);
+                    }
+                    100% {
+                        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+                        transform: translatey(-20px);
+                    }
+            }
+
+            @keyframes flo {
+            0% {
+                transform: translatey(-20px);
+            }
+            50% {
+            
+                transform: translatey(0px);
+            }
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(242, 240, 240, 0);
+                transform: translatey(-20px);
+            }
+            }
+
+       
+
+        #image-top2{
+           width: 150px; 
+           position: relative;
+           top: 100px;
+           left: 45px;
+           margin-bottom: 20px;
+        }
+        #image-top3{
+           width: 80px; 
+           position: relative;
+           top: 100px;
+           left: 80px;
+           margin-bottom: 40px;
+        }
+        #image-top4{
+           width: 100px; 
+           position: relative;
+           top: 100px;
+           left: 80px;
+           margin-bottom: 44px;
+        }
+        #image-top5{
+           width: 200px; 
+           position: relative;
+           top: 50px;
+           left: 30px;
+           margin-bottom: 20px;
+        }
+        .vertical-title{
+           
+           position: relative; 
+           top: 20px;
+            
+            font-weight: bold;
+            
+       }
+       .vertical-title a{
+           color: rgb(50, 46, 46);
+           text-decoration: none;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       .vertical-desc{
+            position: relative;
+             top: 30px;
+             font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+             color: rgb(93, 19, 57);
+        }
+        .secondsec{
+            padding-top: 100px;
+            text-align: center;
+          
+        }
+         .strength span{
+            /* font-style: italic; */
+            font-size: 100px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           
+        }
+        .secondsection{
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .secondsection #section{
+            
+            height: 400px;
+            margin: 0px 75px;
+            margin-top: 50px;
+            padding-bottom: 100px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid plum;
+            border-radius: 20px;
+            background-color: rgba(252, 201, 252, 0.144);
+        }
+        .secondsection .leftsection{
+            background-color: rgba(239, 187, 132, 0);
+            
+        }
+        .secondsection .rightsection{
+            background-color: rgba(113, 156, 122, 0);
+           
+        }
+        .skilbar{
+            background-color: rgba(202, 202, 202, 0.608);
+            width: 400px;
+            height: 10px;
+            /* z-index: 100; */
+            border-radius: 10px;
+        }
+        .skil{
+            /* background-color: rgb(189, 115, 18); */
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .skilbar .skilset1{
+            width: 90%;
+            height: 10px;
+            border-radius: 10px;
+            background-color: rgb(15, 76, 120);
+           
+            animation: progress 1s ease-in-out forwards ;
+           
+        }
+        @keyframes progress {
+            0%{
+                width: 0;
+                opacity: 0;
+            }
+            100%{
+               
+                opacity: 1;
+            }
+        }
+        .skilbar .skilset2{
+            width: 80%;
+            height: 10px;
+            border-radius: 10px;
+            background-color: rgb(195, 180, 23);
+            animation: progress 1s ease-in-out forwards ;
+        }
+        .skilbar .skilset3{
+            width: 85%;
+            height: 10px;
+            border-radius: 10px;
+            background-color: rgb(19, 119, 32);
+            animation: progress 1s ease-in-out forwards ;
+        }
+        .skilbar .skilset4{
+            width: 95%;
+            height: 10px;
+            border-radius: 10px;
+            background-color: rgb(255, 0, 85);
+            animation: progress 1s ease-in-out forwards ;
+        }
+         .skilbar .tip1{
+            margin-left: 340px;
+            margin-top: -6px;
+            width: 40px;
+            height: 20px;
+            border-radius: 3px;
+            color: aliceblue;
+            background-color: rgb(15, 76, 120);
+            animation: progres 0.8s ease-in-out forwards ;
+            /* text-align: center; */
+          
+        }
+        @keyframes progres {
+            0%{
+                width: 0;
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        
+         .skilbar .tipi1{
+            margin-left: 340px;
+            margin-top: 10px;
+            width: 10px;
+            height: 10px;
+            /* border-radius: 3px; */
+            position: relative;
+            z-index: -1;
+            background-color: rgb(15, 76, 120);
+            transform: translateX(15px) rotate(45deg);
+            animation: progres 0.8s ease-in-out forwards ;
+        }
+     
+         .skilbar .tip2{
+            margin-left: 300px;
+            margin-top: -5px;
+            width: 40px;
+            height: 20px;
+            border-radius: 3px;
+            color: aliceblue;
+            background-color: rgb(188, 173, 9);
+            animation: progres 0.8s ease-in-out forwards ;
+
+           
+        }
+        
+         .skilbar .tipi2{
+            margin-left: 300px;
+            margin-top: 10px;
+            width: 10px;
+            height: 10px;
+            position: relative;
+            z-index: -1;
+            background-color: rgb(188, 173, 9);
+            transform: translateX(15px) rotate(45deg);
+            animation: progres 0.8s ease-in-out forwards ;
+
+        }
+         .skilbar .tip3{
+            margin-left: 320px;
+            margin-top: -5px;
+            width: 40px;
+            height: 20px;
+            border-radius: 3px;
+            color: aliceblue;
+            background-color: rgb(49, 105, 9);
+            animation: progres 0.8s ease-in-out forwards ;
+
+        }
+        
+         .skilbar .tipi3{
+            margin-left: 320px;
+            margin-top: 10px;
+            width: 10px;
+            height: 10px;
+            position: relative;
+            z-index: -1;
+            background-color: rgb(49, 105, 9);
+            transform: translateX(15px) rotate(45deg);
+            animation: progres 0.8s ease-in-out forwards ;
+
+        }
+         .skilbar .tip4{
+            margin-left: 360px;
+            margin-top: -5px;
+            width: 40px;
+            height: 20px;
+            border-radius: 3px;
+            color: aliceblue;
+            background-color: rgb(255, 0, 85);
+            animation: progres 0.8s ease-in-out forwards ;
+
+        }
+        
+         .skilbar .tipi4{
+            margin-left: 360px;
+            margin-top: 10px;
+            width: 10px;
+            height: 10px;
+            position: relative;
+            z-index: -1;
+            background-color: rgb(255, 0, 85);
+            transform: translateX(15px) rotate(45deg);
+            animation: progres 0.8s ease-in-out forwards ;
+
+        }
+
+        /* thirdsection */
+        .thirdsection{
+            height: 600px;
+            margin: 50px 75px;
+            border: 2px solid rgba(240, 103, 103, 0);
+            background-color: rgba(245, 219, 184, 0);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            z-index: -10;
+        }
+        
+        .education-head{
+            font-size: 70px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .education-head span{
+           
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .third{
+            height: 500px;
+            margin: 0px 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .third .edu-head{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .third .edu-head .edu-des{
+            font-size: 15px;
+            font-weight: 200;
+        }
+        .third .edu-bar{
+            background-color: rgba(213, 216, 121, 0.488);
+            border-radius: 10PX;
+            height: 10px;
+            width: 100%;
+        }
+        .third .edu-bar .edu-per1{
+            background-color: rgb(240, 143, 7);
+            border-radius: 10PX;
+            height: 10px;
+            width: 73%;
+            /* animation: progress 1s ease-in-out forwards ; */
+        }
+        .animate-edu-per{
+
+            animation: progre 1s ease-in-out forwards ;
+           
+        }
+        @keyframes progre {
+            0%{
+                width: 0;
+                opacity: 0;
+            }
+            100%{
+               width: 100%;
+                opacity: 1;
+            }
+        }
+        .third .edu-bar  .tip1{
+            position: relative;
+            top: 5px;
+            left: 71% ;
+            background-color: rgb(157, 110, 44);
+            color: aliceblue;
+            border-radius: 3PX;
+            height: 25px;
+            width: 50px;
+            text-align: center;
+            z-index: 1;
+        }
+        .third .edu-bar  .tipi1{
+            position: relative;
+            top: 10px;
+            left: 71% ;
+            background-color: rgb(157, 110, 44);
+            /* border-radius: 3PX; */
+            height: 10px;
+            width: 10px;
+            text-align: center;
+            z-index: 0;
+         
+            transform: translateX(15px) rotate(45deg);
+        }
+        .third .edu-bar .edu-per2{
+            background-color: rgb(30, 91, 132);
+            border-radius: 10PX;
+            height: 10px;
+            width: 87%;
+        }
+        .third .edu-bar  .tip2{
+            position: relative;
+            top: 5px;
+            left: 85% ;
+            background-color: rgb(78, 150, 179);
+            color: aliceblue;
+            border-radius: 3PX;
+            height: 25px;
+            width: 50px;
+            text-align: center;
+        }
+        .third .edu-bar  .tipi2{
+            position: relative;
+            top: 10px;
+            left: 85% ;
+            background-color: rgb(78, 150, 179);
+            /* border-radius: 3PX; */
+            height: 10px;
+            width: 10px;
+            text-align: center;
+            z-index: 0;
+         
+            transform: translateX(15px) rotate(45deg);
+        }
+        .third .edu-bar .edu-per3{
+            background-color: rgb(55, 111, 23);
+            border-radius: 10PX;
+            height: 10px;
+            width: 90%;
+        }
+        .third .edu-bar  .tip3{
+            position: relative;
+            top: 5px;
+            left: 88% ;
+            background-color: rgb(46, 142, 99);
+            color: aliceblue;
+            border-radius: 3PX;
+            height: 25px;
+            width: 50px;
+            text-align: center;
+        }
+        .third .edu-bar  .tipi3{
+            position: relative;
+            top: 10px;
+            left: 88% ;
+            background-color: rgb(46, 142, 99);
+            /* border-radius: 3PX; */
+            height: 10px;
+            width: 10px;
+            text-align: center;
+            z-index: 0;
+         
+            transform: translateX(15px) rotate(45deg);
+        }
+        .third .edu-bar  .edu-btn{
+            position: relative;
+            top: -150px;
+            left: 88% ;
+            padding: 10px 15px;
+            width: 150px;
+            background-color: rgb(205, 246, 240);
+            border-radius: 5PX;
+            border: 0px solid black;
+            box-shadow: 0px 0px 8px 3px rgba(113, 109, 109, 0.596);
+           
+
+            font-weight: bold;
+           display:flex;
+           flex-direction: row;
+           justify-content: space-around;
+           transition: all 0.2s ease-in-out;
+          }
+          .third .edu-bar a{
+            text-decoration: none;
+          }
+        .third .edu-bar  .edu-btn:hover{
+            cursor: pointer;
+            /* background-color: rgb(35, 128, 128);
+            color: aliceblue; */
+            box-shadow: 0px 0px 10px 5px rgba(122, 117, 117, 0.721);
+            scale: 1.01;
+           
+          }
+        .third .edu-bar  .edu-btn img{
+          width: 20px;
+        }
+        .third .edu-time .edu-des{
+            position: relative;
+            top: 5px;
+            font-size: 15px;
+            font-weight: 200;
+
+        }
+        
+
+
+
+        /* footer */
+        .footersection{
+            background-color: aliceblue;
+            /* height: 300px; */
+        }
+        .footer{
+            margin: 0px auto;
+            margin-top: 50px;
+            width: 90%;
+            height: 250px;
+            max-width: none;
+            border-top: 2px solid #000;
+            background-color: aliceblue;
+            padding-top: 0;
+            /* padding-bottom: 65px; */
+            display: flex;
+            flex-direction: column;
+
+        }
+        .footer_first{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .footer .heading {
+            margin: 60px 60px;
+            margin-right: 280px;
+            /* font-family: 'Aclonica', sans-serif; */
+            text-decoration: none;
+            color: #000;
+        }
+        .footer .heading .name{
+            /* margin: 20px 20px; */
+            font-family: 'Aclonica', sans-serif;
+            font-size: 25px;
+            text-decoration: none;
+            color: #000;
+        }
+        
+
+
+        .footer .social{
+            /* position: relative; */
+
+            top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer .social_links{
+            margin: 20px;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer .social_links a{
+           text-decoration: none;
+           color: #000;
+           height: 50px;
+           width: 50px;
+           transition: all 0.2s ease-out;
+        }
+       
+        .footer .social_links a.youtube{
+          background-image: url("/static/youtube.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.instagram{
+            background-image: url("/static/instagram.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.linkedin{
+            background-image: url("/static/linkedin.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.facebook{
+            background-image: url("/static/facebook.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.twitter{
+            background-image: url("/static/twitter.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+
+        }
+        .footer .social_links a:hover{
+            transform: scale(1.1);
+           box-shadow: 0 0 15px #ffef1000;
+           
+        }
+        .sr_only {
+            width: 1px;
+            height: 1px;
+            white-space: nowrap;
+            border: 0 solid transparent;
+            margin-top: -1px;
+            padding: 0;
+            display: block;
+            position: absolute;
+            overflow: hidden;
+          }
+
+          .footer .links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-items: center; */
+            height: 350px;
+            
+        }
+       
+        .footer .links .use_links{
+            text-decoration: none;
+            width: 500px;
+            height: 50px;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-items: center; */
+            padding-left: 100px ;
+            padding-bottom: 30px;
+           
+        }
+        .footer .links .use_links a{
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+
+        }
+    .copyright{
+        background-color: aliceblue;
+    }
+   .copy{
+    height: 50px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 20px;
+    border-top: 2px solid black;
+    width: 80%;
+    margin: 0px auto;
+    /* margin-top: 30px; */
+   }
+
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="left">SAGNIK's Portfolio</div>
+        <div class="right">
+            <ul> 
+                <li href="/"><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/contact">Contact Me</a></li>
+            </ul>
+        </div>
+       </nav>
+  </header>  
+      
+    <section class="secondsec">
+            <div class="strength">
+                <span id="element"></span>
+            </div>
+            <div class="secondsection">
+                <div class="leftsection" id="section">
+                    <div class="skilhead" id="skil4"><h2>SKILLS</h2></div> 
+                    <div class="skil" >
+                        <span>DSA</span>
+                        <div class="skilbar">
+                            <div class="skilset1"></div>
+                            <div class="tipi1"></div>
+                            <div class="tip1"><h4>90%</h4></div>
+                        </div>
+                    </div>
+                    <div class="skil" >
+                        <span>JAVA <br>Script</span>
+                        <div class="skilbar">
+                            <div class="skilset2"></div>
+                            <div class="tipi2"></div>
+                            <div class="tip2"><h4>80%</h4></div>
+                        </div>
+                    </div>
+                    <div class="skil" >
+                        <span>HTML</span>
+                        <div class="skilbar">
+                            <div class="skilset3"></div>
+                            <div class="tipi3"></div>
+                        <div class="tip3"><h4>85%</h4></div> 
+                        </div>
+                    </div>
+                    <div class="skil" >
+                        <span>CSS</span>
+                        <div class="skilbar">
+                            <div class="skilset4"></div>
+                            <div class="tipi4"></div>
+                        <div class="tip4"><h4>95%</h4></div> 
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="rightsection" id="section">
+                    <div class="skilhead" id="skil4"><h2>CORE SUBJECTS</h2></div>
+                    <div class="skil" >
+                        <span>AUTOMATA</span>
+                        <div class="skilbar">
+                            <div class="skilset1"></div>
+                            <div class="tipi1"></div>
+                            <div class="tip1"><h4>90%</h4></div>
+                        </div>
+                    </div>
+                    <div class="skil" >
+                        <span>DBMS</span>
+                        <div class="skilbar">
+                            <div class="skilset2"></div>
+                            <div class="tipi2"></div>
+                            <div class="tip2"><h4>80%</h4></div>
+                        </div>
+                    </div>
+                    <div class="skil" >
+                    <span>COMPUTER <br> NETWORKS</span>
+                        <div class="skilbar">
+                            <div class="skilset3"></div>
+                            <div class="tipi3"></div>
+                        <div class="tip3"><h4>85%</h4></div> 
+                        </div>
+                    </div>
+                    <div class="skil" >
+                        <span>OS</span>
+                        <div class="skilbar">
+                            <div class="skilset4"></div>
+                            <div class="tipi4"></div>
+                            <div class="tip4"><h4>95%</h4></div> 
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>      
+        </section>
+        <section class="thirdsection" >
+            <div class="education-head">
+                <span id="element-education-head"></span>
+            </div>
+            <div class="third">
+               <div class="education">
+                <div class="edu-head">
+                    <span>B.TECH (CSE)</span>
+                    <br>
+                    <span class="edu-des"> IIIT BHAGALPUR --current CGPA (7.33)</span>
+                </div>
+                <div class="edu-bar">
+                    <div class="edu-perr1" >
+                        <div class="edu-per1" ></div>
+                        <div class="tipi1" ></div>
+                        <div class="tip1" ><h4>73.3%</h4></div> 
+                    </div>
+                   
+                    <a href="/download/sagnik-sign.pdf" download><button class="edu-btn" type="button" )">Download <img src="/static/edu-download.png" alt=""></button></a>
+                </div>
+                <div class="edu-time">
+                    <span class="edu-des"> (2021 - 2025) </span>
+                </div>
+               </div>
+               <div class="education">
+                <div class="edu-head">
+                    <span>12th (CBSE)</span>
+                    <br>
+                    <span class="edu-des">Aditya Educational Institutions</span>
+                </div>
+                <div class="edu-bar" >
+                    <div class="edu-perr2" >
+                        <div class="edu-per2" ></div>
+                        <div class="tipi2" ></div>
+                        <div class="tip2" ><h4>87.4%</h4></div>
+                    </div>
+                    
+                </div>
+                <div class="edu-time">
+                    <span class="edu-des"> (2019 - 2021) </span>
+                </div>
+               </div>
+               <div class="education">
+                <div class="edu-head">
+                    <span>10TH (CBSE)</span>
+                    <br>
+                    <span class="edu-des">JAWAHAR NAVODAYA VIDYALAYA (JNV)</span>
+                </div>
+                <div class="edu-bar" >
+                    <div class="edu-perr3">
+                        <div class="edu-per3"></div>
+                        <div class="tipi3"></div>
+                        <div class="tip3"><h4>90.8%</h4></div>
+                    </div>     
+                </div>
+                <div class="edu-time">
+                    <span class="edu-des"> (2014 - 2019) </span>
+                </div>
+               </div>
+            </div>
+        </section>   
+        <section class="firstsection">
+            <div class="first">
+                <div class="vertical">
+                    <div class="box">
+                        <img src="/static/deve9.webp" alt="" class="image-top" id="image-top5">  
+                    </div>
+                    <div class="box">
+                        <img src="/static/deve7.webp" alt="" class="image-top" id="image-top4">
+                    </div>
+                    <div class="box">
+                        <img src="/static/deve6.png" alt="" class="image-top" id="image-top3">
+                    </div>
+                    <div class="box">
+                        <img src="/static/deve2.png" alt="" class="image-top" id="image-top2">
+                    </div>
+                    <div class="box">
+                        <img src="/static/deve8.webp" alt="" class="image-top">
+                    </div>
+                </div>
+                <div class="des">
+                    <div class="desc">
+                        <div class="vertical-title">
+                        <h2><a href="">HTML developer</a> </h2>   
+                        </div>
+                        <div class="vertical-desc">
+                        Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum accusantium repellat nemo suscipit earum, excepturi nostrum voluptatibus ea, nobis quae tempora veniam. Tenetur, 
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div class="vertical-title">
+                        <h2><a href="">HTML developer</a> </h2>   
+                        </div>
+                        <div class="vertical-desc">
+                        Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum accusantium repellat nemo suscipit earum, excepturi nostrum voluptatibus ea, nobis quae tempora veniam. Tenetur, 
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div class="vertical-title">
+                        <h2><a href="">HTML developer</a> </h2>   
+                        </div>
+                        <div class="vertical-desc">
+                        Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum accusantium repellat nemo suscipit earum, excepturi nostrum voluptatibus ea, nobis quae tempora veniam. Tenetur, 
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div class="vertical-title">
+                        <h2><a href="">HTML developer</a> </h2>   
+                        </div>
+                        <div class="vertical-desc">
+                        Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum accusantium repellat nemo suscipit earum, excepturi nostrum voluptatibus ea, nobis quae tempora veniam. Tenetur, 
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div class="vertical-title">
+                        <h2><a href="">HTML developer</a> </h2>   
+                        </div>
+                        <div class="vertical-desc">
+                        Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum accusantium repellat nemo suscipit earum, excepturi nostrum voluptatibus ea, nobis quae tempora veniam. Tenetur, 
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+       
+    </section>
+
+    
+  <section class="footersection">
+        <div class="footer">
+            <div class="footer_first">
+                <div class="heading">
+                    <a class="name" href="/">
+                    <p>SAGNIK MODAK</p> 
+                    </a>
+                    <p>since 2002</p>
+                </div>
+
+                <div class="social">
+                    <div class="social_head"><h2>MY Social Media</h2></div>
+                    <div class="social_links">
+                        <a href="https://www.youtube.com/@sagnikmodak3124" class="youtube"> 
+                            <div  class="sr_only">youtube</div>
+                        </a>
+                        <a href="https://www.instagram.com/sagnik3124/" class="instagram">
+                            <div class="sr_only">instagram</div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sagnikmodak/" class="linkedin">
+                            <div class="sr_only">linkedin</div>
+                        </a>
+                        <a href="https://www.facebook.com/sagnik3124/" class="facebook">
+                            <div class="sr_only">facebook</div>
+                        </a>
+                        <a href="https://twitter.com/SagnikModak3124"  class="twitter">
+                            <div class="sr_only">twitter</div>
+                        </a>
+                    </div>
+                
+
+                </div>
+            </div>
+
+            <div class="links">
+                <div class="uselinks">
+                    <div class="use_links">
+                        <a href="/">Home</a>
+                        <a href="/">About</a>
+                        <a href="/">services</a>
+                        <a href="/">Projects</a>
+                        <a href="/">History</a>
+                    </div>
+                
+                </div> 
+            </div>
+            
+        </div>
+  </section>
+    <section class="copyright">
+        <div class="copy">
+            <p class="copyright">Copyright © 2023, Sagnik Inc. All rights reserved.</p>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+<script>
+
+  var typed = new Typed('#element', {
+    strings: ['STRENGTHS'],
+    typeSpeed: 200,
+  });
+  var typed = new Typed('#element-education-head', {
+    strings: ['EDUCATION'],
+    typeSpeed: 200,
+  });
+
+  const $observeSection1 = document.querySelector('.edu-perr1');
+  const options1 = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5
+};
+
+const observer1 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > options1.threshold) {
+      $observeSection1.classList.add('animate-edu-per');
+    } 
+  });
+}, options1);
+
+observer1.observe($observeSection1);
+
+
+
+  const $observeSection2 = document.querySelector('.edu-perr2');
+  const options2 = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5
+};
+
+const observer2 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > options2.threshold) {
+      $observeSection2.classList.add('animate-edu-per');
+    } 
+  });
+}, options2);
+
+observer2.observe($observeSection2);
+
+
+
+  const $observeSection3 = document.querySelector('.edu-perr3');
+  const options3 = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5
+};
+
+const observer3 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > options3.threshold) {
+      $observeSection3.classList.add('animate-edu-per');
+    } 
+  });
+}, options3);
+
+observer3.observe($observeSection3);
+</script>       
+    
+</body>
+</html>
