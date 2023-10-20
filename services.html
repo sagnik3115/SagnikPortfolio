@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth !important ;
+            /* transition: all 1s ease-in-out; */
+        }  
+          nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(208, 235, 239);
+            color: rgb(10, 11, 11);
+            font-weight: bold;
+            position: fixed ;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0px 0px;
+            /* padding: 17px 40px */
+        }
+        nav ul li a{
+            position: relative;
+            font-weight: 500;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(20, 20, 20);
+            padding: 18px 40px;
+
+        }
+        nav ul li a:hover{
+            color: rgb(164, 195, 195);
+            border-bottom: 3px solid aliceblue;
+            transition-duration: 0.2s;
+        }
+        
+        .left{
+            font-size: 2rem;
+        }
+
+        .first{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .ser-intro video{
+            width: 400px;
+            height: 400px;
+            /* position: fixed; */
+            animation: progres 1s ease-in-out backwards ;
+            animation-delay: 2s;
+        }
+        @keyframes progres {
+            0%{
+                width: 0;
+                opacity: 0;
+            }
+            20%{
+                opacity: 0.2;
+                width: 0;
+            }
+            40%{
+                opacity: 0.4;
+                width: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .ser-head{
+           margin: auto 0px;
+           font-size: 100px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           text-shadow: 5px 5px 10px  rgba(117, 115, 115, 0.719);
+        }
+       
+        .second{
+            height: 1000px;
+            margin: 100px 0px;
+            display: flex;
+            flex-direction: column;
+        }
+        .ser-set{
+          display: flex;
+          flex-direction: row;
+         justify-content: center;
+         height: 100%;
+         width: 100%;
+        }
+        .ser{
+            box-shadow: 0px 0px 20px 1px rgba(128, 128, 128, 0.638);
+            background-color: rgba(0, 0, 255, 0);
+            height: 400px;
+            width: 400px;
+            margin: 30px 30px;
+            border: 2px solid rgba(255, 0, 0, 0);
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+        .ser:hover{
+            box-shadow: 0px 0px 25px 4px rgba(128, 128, 128, 0.638) ;
+        }
+        .ser-img img{
+            width: 100px;
+            height: 100px;
+        }
+        .ser-des span{
+            font-weight: bold;
+        }
+
+        /* footer */
+        .footersection{
+            background-color: aliceblue;
+            /* height: 300px; */
+        }
+        .footer{
+            margin: 0px auto;
+            margin-top: 50px;
+            width: 90%;
+            height: 250px;
+            max-width: none;
+            border-top: 2px solid #000;
+            background-color: aliceblue;
+            padding-top: 0;
+            /* padding-bottom: 65px; */
+            display: flex;
+            flex-direction: column;
+
+        }
+        .footer_first{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .footer .heading {
+            margin: 60px 60px;
+            margin-right: 280px;
+            /* font-family: 'Aclonica', sans-serif; */
+            text-decoration: none;
+            color: #000;
+        }
+        .footer .heading .name{
+            /* margin: 20px 20px; */
+            font-family: 'Aclonica', sans-serif;
+            font-size: 25px;
+            text-decoration: none;
+            color: #000;
+        }
+        
+
+
+        .footer .social{
+            /* position: relative; */
+
+            top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer .social_links{
+            margin: 20px;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer .social_links a{
+           text-decoration: none;
+           color: #000;
+           height: 50px;
+           width: 50px;
+           transition: all 0.2s ease-out;
+        }
+       
+        .footer .social_links a.youtube{
+          background-image: url("/static/youtube.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.instagram{
+            background-image: url("/static/instagram.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.linkedin{
+            background-image: url("/static/linkedin.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.facebook{
+            background-image: url("/static/facebook.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+        }
+        .footer .social_links a.twitter{
+            background-image: url("/static/twitter.png");
+          background-repeat: no-repeat;
+          background-size: 40px ;
+
+        }
+        .footer .social_links a:hover{
+            transform: scale(1.1);
+           box-shadow: 0 0 15px #ffef1000;
+           
+        }
+        .sr_only {
+            width: 1px;
+            height: 1px;
+            white-space: nowrap;
+            border: 0 solid transparent;
+            margin-top: -1px;
+            padding: 0;
+            display: block;
+            position: absolute;
+            overflow: hidden;
+          }
+
+          .footer .links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-items: center; */
+            height: 350px;
+            
+        }
+       
+        .footer .links .use_links{
+            text-decoration: none;
+            width: 500px;
+            height: 50px;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-items: center; */
+            padding-left: 100px ;
+            padding-bottom: 30px;
+           
+        }
+        .footer .links .use_links a{
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+
+        }
+    .copyright{
+        background-color: aliceblue;
+    }
+   .copy{
+    height: 50px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 20px;
+    border-top: 2px solid black;
+    width: 80%;
+    margin: 0px auto;
+    /* margin-top: 30px; */
+   }
+   nav .right ul li button{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: 80px;
+    font-weight: bold;
+   }
+   nav .right ul li .mode{
+   width: 60px;
+   height: 40px;
+   background-color: rgba(255, 255, 255, 0) ;
+   background-image: url(/static/night-mode.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   transition: all 0.7s ease-in-out;
+   }
+   .dark{
+    background-color: #000;
+    color: aliceblue;
+    transition: all 0.7s ease-in-out;
+    
+    .right ul li .mode{   
+     background-color: rgba(240, 248, 255, 0);
+     background-image: url(/static/light-mode.png);
+      }
+
+      .copy{
+        color: #000;
+       }
+        .social_head{
+            color: #000;
+        }
+        
+        .contact{
+            color: #000;
+        }
+   }
+
+    </style>
+</head>
+<body>
+     <header>
+    <nav>
+        <div class="left">SAGNIK's Portfolio</div>
+        <div class="right">
+            <ul> 
+                <li><div class="mode" onclick="Dark()"></div></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/contact">Contact Me</a></li>
+            </ul>
+        </div>
+       </nav>
+  </header> 
+  <section class="firstsection">
+    <div class="first">
+        <div class="ser-intro">
+            <video autoplay loop muted>
+             <source src="/static/ser-intro.mp4">
+            </video>
+        </div>
+        <div class="ser-head">
+            <div>
+                <span id="element"> </span>
+            </div> 
+        </div>
+    </div>
+  </section> 
+  <section class="secondsection">
+    <div class="second">
+        <div class="ser-set">
+            <div class="ser" id="ser1">
+                <div class="ser-img" id="ser-img1">
+                    <img src="/static/ser2.png" alt="">
+                </div>
+                <div class="ser-des">
+                    <span>service</span>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, repellendus?</p>
+                </div>
+                
+            </div>
+            <div class="ser" id="ser2">
+                <div class="ser-img" id="ser-img2">
+                    <img src="/static/ser3.png" alt="">
+                </div>
+                <div class="ser-des">
+                    <span>service</span>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, repellendus?</p>
+                </div>
+            </div>
+            <div class="ser" id="ser3">
+                <div class="ser-img" id="ser-img3">
+                    <img src="/static/ser4.png" alt="">
+                </div>
+                <div class="ser-des">
+                    <span>service</span>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, repellendus?</p>
+                </div>
+            </div>
+        </div>
+        <div class="ser-set">
+            <div class="ser" id="ser4">
+                <div class="ser-img" id="ser-img4">
+                    <img src="/static/ser5.png" alt="">
+                </div>
+                <div class="ser-des">
+                    <span>service</span>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, repellendus?</p>
+                </div>
+            </div>
+            <div class="ser" id="ser5">
+                <div class="ser-img" id="ser-img5">
+                    <img src="/static/ser6.png" alt="">
+                </div>
+                <div class="ser-des">
+                    <span>service</span>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, repellendus?</p>
+                </div>
+            </div>
+            <div class="ser" id="ser6">
+                <div class="ser-img" id="ser-img6">
+                    <img src="/static/ser7.png" alt="">
+                </div>
+                <div class="ser-des">
+                    <span>service</span>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, repellendus?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="footersection">
+    <div class="footer">
+        <div class="footer_first">
+            <div class="heading">
+                <a class="name" href="/">
+                  <p>SAGNIK MODAK</p> 
+                </a>
+                <p>since 2002</p>
+            </div>
+
+            <div class="social">
+                <div class="social_head"><h2>MY Social Media</h2></div>
+                <div class="social_links">
+                    <a href="https://www.youtube.com/@sagnikmodak3124" class="youtube"> 
+                        <div  class="sr_only">youtube</div>
+                    </a>
+                    <a href="https://www.instagram.com/sagnik3124/" class="instagram">
+                         <div class="sr_only">instagram</div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sagnikmodak/" class="linkedin">
+                         <div class="sr_only">linkedin</div>
+                    </a>
+                    <a href="https://www.facebook.com/sagnik3124/" class="facebook">
+                         <div class="sr_only">facebook</div>
+                    </a>
+                    <a href="https://twitter.com/SagnikModak3124"  class="twitter">
+                         <div class="sr_only">twitter</div>
+                    </a>
+                </div>
+               
+
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="uselinks">
+                <div class="use_links">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/">services</a>
+                    <a href="/">Projects</a>
+                    <a href="/">History</a>
+                </div>
+              
+            </div> 
+        </div>
+         
+    </div>
+</section>
+<section class="copyright">
+    <div class="copy">
+        <p class="copyright">Copyright © 2023, Sagnik Inc. All rights reserved.</p>
+    </div>
+</section>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+
+    var typed = new Typed('#element', {
+      strings: ['OUR SERVICES'],
+      typeSpeed: 50,
+    });
+
+
+    //dark
+    function Dark() {
+            let element = document.body;
+            element.classList.toggle("dark");
+        }
+  </script>
+</body>
+</html>
