@@ -24,7 +24,7 @@
             width: 100%;
         }
         .web{
-            background-image: url("static/sbg.jpg");
+            /* background-image: url("/static/sbg.jpg"); */
             background-size: cover;
             transition: all 0.7s ease-in-out;
         }        
@@ -179,7 +179,7 @@
         }
         .secondsection{
             width: 100%;
-            margin: 40px 40px;
+            margin: 40px auto;
             /* height: 650px; */
           font-synthesis: style;
           font-size: 20px;
@@ -492,27 +492,27 @@
         }
        
         .footer .social_links a.youtube{
-          background-image: url("static/youtube.png");
+          background-image: url("/static/youtube.png");
           background-repeat: no-repeat;
           background-size: 40px ;
         }
         .footer .social_links a.instagram{
-            background-image: url("static/instagram.png");
+            background-image: url("/static/instagram.png");
           background-repeat: no-repeat;
           background-size: 40px ;
         }
         .footer .social_links a.linkedin{
-            background-image: url("static/linkedin.png");
+            background-image: url("/static/linkedin.png");
           background-repeat: no-repeat;
           background-size: 40px ;
         }
         .footer .social_links a.facebook{
-            background-image: url("static/facebook.png");
+            background-image: url("/static/facebook.png");
           background-repeat: no-repeat;
           background-size: 40px ;
         }
         .footer .social_links a.twitter{
-            background-image: url("static/twitter.png");
+            background-image: url("/static/twitter.png");
           background-repeat: no-repeat;
           background-size: 40px ;
 
@@ -840,13 +840,9 @@ form .form-row .textarea{
 }
 
         p {
-                    width: 425px;
+                    width: 1000px;
             display:inline-block ;
             
-        }
-               .footer_first p {
-        
-         width: 225px;
         }
 
                 .secondsection {
@@ -858,7 +854,8 @@ form .form-row .textarea{
             padding: 30px;
             
         }
-            .vertical-desc {
+
+        .vertical-desc {
     position: relative;
     top: 30px;
     font-size: 25px;
@@ -868,7 +865,6 @@ form .form-row .textarea{
     margin-left: -70px;
     transition: all 0.7s ease-in-out;
 }
-
            .footersection {
             
                 width: 105%;
@@ -876,8 +872,8 @@ form .form-row .textarea{
             .copyright{
                 width: 105%;
             }
-
-          .footer .social_links a {
+        
+            .footer .social_links a {
     text-decoration: none;
     color: #000;
     height: 80px;
@@ -909,8 +905,6 @@ form .form-row .textarea{
     background-repeat: no-repeat;
     background-size: 70px;
 }
-        
-      
 
 
         .ftsection .first{
@@ -1196,7 +1190,7 @@ width: 99%;
 }
 
  p {
-             width: 600px;
+             width: 425px;
      display:inline-block ;
      
  }
@@ -1206,14 +1200,14 @@ width: 99%;
      /* justify-content: center; */
      flex-direction: column; 
      width: 90%;
-     margin: 40px 40px ;
+     margin: 40px auto ;
      padding: 30px;
      
  }
  .secondsection.box{
     width: 100%;
  }
-    .vertical-desc {
+ .vertical-desc {
     position: relative;
     top: 30px;
     font-size: 25px;
@@ -1224,20 +1218,56 @@ width: 99%;
     transition: all 0.7s ease-in-out;
 }
 
+
     .footersection {
      
-         width: 100%;
+         width: 105%;
      }
      .footer_first {
 
-  width: 95%;
+  width: 93%;
+}
+.footer_first p {
+
+ width: 225px;
 }
      .copyright{
-         width: 100%;
+         width: 105%;
      }
  
 
-
+     .footer .social_links a {
+    text-decoration: none;
+    color: #000;
+    height: 80px;
+    width: 80px;
+    transition: all 0.2s ease-out;
+}
+.footer .social_links a.instagram {
+    background-image: url(/static/instagram.png);
+    background-repeat: no-repeat;
+    background-size: 70px;
+}
+.footer .social_links a.youtube {
+    background-image: url(/static/youtube.png);
+    background-repeat: no-repeat;
+    background-size: 70px;
+}
+.footer .social_links a.linkedin {
+    background-image: url(/static/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: 70px;
+}
+.footer .social_links a.facebook {
+    background-image: url(/static/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 70px;
+}
+.footer .social_links a.twitter {
+    background-image: url(/static/twitter.png);
+    background-repeat: no-repeat;
+    background-size: 70px;
+}
 
  .ftsection .first{
      display: flex;
@@ -1245,6 +1275,7 @@ width: 99%;
      justify-content: center;
      word-wrap: normal;
      width: 95%;
+     /* margin-left: 100px; */
  }
  .ftsection .vertical{
      background: rgb(180, 146, 83);
@@ -1490,11 +1521,11 @@ width: 99%;
             <div class="right">
                 <ul> 
                     <li><div class="mode" onclick="Dark()"></div></li>
-                    <li href="index.html"><a href="/">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="index.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+                    <li href="/"><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/contact">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -1517,10 +1548,10 @@ width: 99%;
               
             </div>
             <div class="midsection">
-                <img src="static/sagnik_bg.png" alt="">
+                <img src="/static/sagnik_bg.png" alt="">
             </div>
             <div class="rightsection">
-                <img src="static/bg3.webp" alt="">
+                <img src="/static/bg3.webp" alt="">
             </div>
         </section>
         <hr class="hr">
@@ -1576,7 +1607,7 @@ width: 99%;
             
             <div class="box">
                <div class="vertical">
-                    <img src="static/deve8.webp" alt="" class="image-top">
+                    <img src="/static/deve8.webp" alt="" class="image-top">
                     <div class="vertical-title">
                      <a href="">HTML developer</a>   
                     </div>
@@ -1585,7 +1616,7 @@ width: 99%;
                     </div>
                </div>
                <div class="vertical">
-                    <img src="static/deve2.png" alt="" class="image-top" id="image-top2">
+                    <img src="/static/deve2.png" alt="" class="image-top" id="image-top2">
                     <div class="vertical-title">
                      <a href="">JS developer</a>   
                      
@@ -1595,7 +1626,7 @@ width: 99%;
                     </div>
                </div>
                <div class="vertical">
-                    <img src="static/deve6.png" alt="" class="image-top" id="image-top3">
+                    <img src="/static/deve6.png" alt="" class="image-top" id="image-top3">
                     <div class="vertical-title">
                      <a href="">CSS developer</a>   
                      
@@ -1605,7 +1636,7 @@ width: 99%;
                     </div>
                </div>
                <div class="vertical">
-                    <img src="static/deve7.webp" alt="" class="image-top" id="image-top4">
+                    <img src="/static/deve7.webp" alt="" class="image-top" id="image-top4">
                     <div class="vertical-title">
                      <a href="">12 and JEE</a>   
                      
@@ -1615,7 +1646,7 @@ width: 99%;
                     </div>
                </div>
                <div class="vertical">
-                    <img src="static/deve9.webp" alt="" class="image-top" id="image-top5">
+                    <img src="/static/deve9.webp" alt="" class="image-top" id="image-top5">
                     <div class="vertical-title">
                      <a href=""> Mind developer (Era of JNV)</a>   
                       
@@ -1633,19 +1664,19 @@ width: 99%;
             <div class="first">
                 <div class="vertical">
                     <div class="box">
-                        <img src="static/deve9.webp" alt="" class="image-top" id="image-top5">  
+                        <img src="/static/deve9.webp" alt="" class="image-top" id="image-top5">  
                     </div>
                     <div class="box">
-                        <img src="static/deve7.webp" alt="" class="image-top" id="image-top4">
+                        <img src="/static/deve7.webp" alt="" class="image-top" id="image-top4">
                     </div>
                     <div class="box">
-                        <img src="static/deve6.png" alt="" class="image-top" id="image-top3">
+                        <img src="/static/deve6.png" alt="" class="image-top" id="image-top3">
                     </div>
                     <div class="box">
-                        <img src="static/deve2.png" alt="" class="image-top" id="image-top2">
+                        <img src="/static/deve2.png" alt="" class="image-top" id="image-top2">
                     </div>
                     <div class="box">
-                        <img src="static/deve8.webp" alt="" class="image-top">
+                        <img src="/static/deve8.webp" alt="" class="image-top">
                     </div>
                 </div>
                 <div class="des">
