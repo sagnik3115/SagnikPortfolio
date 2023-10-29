@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAGNIK-Dev-portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <style>
@@ -21,10 +25,10 @@
        
         .main{
             display: block;
-            width: 100%;
+            width: fit-content;
         }
         .web{
-/*             background-image: url("static/sbg.jpg"); */
+            background-image: url("static/sbg.jpg");
             background-size: cover;
             transition: all 0.7s ease-in-out;
         }        
@@ -39,10 +43,9 @@
             
         }
         nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 70px;
+            
+            height: 80px;
+           
             font-family: 'Poppins', sans-serif;
             /* background-color: rgb(10, 82, 95); */
             background-color: rgb(208, 235, 239);
@@ -53,11 +56,19 @@
             width: 100%;
             z-index: 100;
         }
+        .nav{
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px auto;
+        }
         nav ul{
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            margin: 0px 10px;
         }
         nav ul li{
             list-style: none;
@@ -72,6 +83,10 @@
             color: rgb(17, 17, 17);
             padding: 18px 40px;
 
+        }
+        nav ul i{
+           font-size: 2vw;
+           display: none;
         }
         nav ul li a:hover{
             color: rgb(164, 195, 195);
@@ -188,6 +203,10 @@
          line-height: 30px;
          
         }
+        .secondsection .box {
+            margin: auto;
+          width: 100%;
+        }
         .secondsection .box .me{
             font-weight: bold;
            color:  rgb(20, 112, 129);
@@ -205,22 +224,24 @@
             color:  rgb(20, 112, 129);
         }
         .Utube{
-            max-width: 100%;
+            width: 100%;
             margin: 40px auto;
             height: 650px;
             display: flex;
+            
         }
         .riview{
             margin:  auto;
             /* padding: 60px 60px ; */
             border: 3px solid rgba(255, 0, 0, 0);
             border-radius: 10px;
-            /* width: 600px; */
+            /* width: 80%; */
         }
         .riview iframe {
             box-shadow: 0px 0px 25px 4px rgba(128, 128, 128, 0.638);
             border: 3px solid rgb(202, 195, 195);
             border-radius: 30px;
+            /* width: 100%; */
         }
         .thirdsection{
             max-width: 80vw;
@@ -447,6 +468,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            width: 100%;
         }
         .footer .heading {
             margin: 60px 60px;
@@ -561,7 +583,7 @@
 
         }
        .footer .contact_form{
-        width: 1000px;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -731,7 +753,7 @@ form .form-row .textarea{
    height: 40px;
    
    background-color: rgba(255, 255, 255, 0) ;
-   background-image: url(/static/night-mode.png);
+   background-image: url(static/night-mode.png);
    background-size: contain;
    background-repeat: no-repeat;
    transition: all 0.7s ease-in-out;
@@ -818,6 +840,7 @@ form .form-row .textarea{
          nav ul li a {
            
             padding: 18px 20px;
+            font-size: 2em;
         }
             .thirdsection {
        
@@ -831,12 +854,14 @@ form .form-row .textarea{
             width: 94vw;
         
            }
+
+         
     *{
         width: fit-content;
     }
     .firstsection {
   
-    width: 104%;
+    width: 100%;
 }
 
         p {
@@ -845,15 +870,29 @@ form .form-row .textarea{
             
         }
 
-                .secondsection {
-            /* display: flex; */
-            /* justify-content: center; */
-            flex-direction: column; 
+
+        .riview{
+            margin:  auto;
+            /* padding: 60px 60px ; */
+            border: 3px solid rgba(255, 0, 0, 0);
+            border-radius: 10px;
+            width: 60%;
+        }
+        .riview iframe {
+            box-shadow: 0px 0px 25px 4px rgba(128, 128, 128, 0.638);
+            border: 3px solid rgb(202, 195, 195);
+            border-radius: 30px;
             width: 100%;
-            margin: 40px 40px ;
+        }
+
+                .secondsection {
+            
+           
             padding: 30px;
             
         }
+
+
 
         .vertical-desc {
     position: relative;
@@ -867,10 +906,10 @@ form .form-row .textarea{
 }
            .footersection {
             
-                width: 105%;
+                width: 100%;
             }
             .copyright{
-                width: 105%;
+                width: 100%;
             }
         
             .footer .social_links a {
@@ -1151,6 +1190,22 @@ form .form-row .textarea{
 
 
 
+  @media screen and (max-width : 800px){
+    nav ul i{
+        font-size: 5vmax;
+        font-weight: 1200;
+        display: block;
+    }
+    nav ul li a{
+        display: none;
+    }
+   }
+
+
+
+
+
+
 
 
 
@@ -1195,6 +1250,21 @@ width: 100%;
      
  }
 
+ .riview{
+            margin:  auto;
+            /* padding: 60px 60px ; */
+            border: 3px solid rgba(255, 0, 0, 0);
+            border-radius: 10px;
+            width: 60%;
+        }
+        .riview iframe {
+            box-shadow: 0px 0px 25px 4px rgba(128, 128, 128, 0.638);
+            border: 3px solid rgb(202, 195, 195);
+            border-radius: 30px;
+            width: 100%;
+        }
+
+
          .secondsection {
      /* display: flex; */
      /* justify-content: center; */
@@ -1221,18 +1291,18 @@ width: 100%;
 
     .footersection {
      
-         width: 105%;
+         width: 100%;
      }
      .footer_first {
 
-  width: 93%;
+  width: 100%;
 }
 .footer_first p {
 
  width: 225px;
 }
      .copyright{
-         width: 105%;
+         width: 100%;
      }
  
 
@@ -1523,17 +1593,21 @@ width: 100%;
   
     <header>    
         <nav>
-            <div class="left">SAGNIK's Portfolio</div>
-            <div class="right">
-                <ul> 
-                    <li><div class="mode" onclick="Dark()"></div></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="index.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
+            <div class="nav">
+                <div class="left">SAGNIK's Portfolio</div>
+                <div class="right">
+                    <ul> 
+                        <li><div class="mode" onclick="Dark()"></div></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                        <i class="ri-menu-3-fill"></i>
+                    </ul>
+                </div>
             </div>
+           
         </nav>
         
     </header>
