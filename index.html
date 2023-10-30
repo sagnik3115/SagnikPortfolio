@@ -61,7 +61,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin:  auto;
+            margin: auto;
             height: 100%;
         }
         nav ul{
@@ -427,7 +427,7 @@
            
             position: relative; 
             top: 25px;
-             width: 130px;
+             width: 100%;
              font-weight: bold;
              text-align: center;
              margin-left: -50px;
@@ -895,16 +895,6 @@ form .form-row .textarea{
 
 
 
-        .vertical-desc {
-    position: relative;
-    top: 30px;
-    font-size: 25px;
-    width: 500px;
-    color: gray;
-    /* text-align: center; */
-    margin-left: -70px;
-    transition: all 0.7s ease-in-out;
-}
            .footersection {
             
                 width: 100%;
@@ -945,7 +935,10 @@ form .form-row .textarea{
     background-repeat: no-repeat;
     background-size: 70px;
 }
-
+       
+       .ftsection{
+        width: 100%;
+       }
 
         .ftsection .first{
             display: flex;
@@ -963,6 +956,39 @@ form .form-row .textarea{
             flex-direction: column;
             border-radius: 10px;
         }
+        /* .des{
+            width: 80%;
+
+        }
+        .des.desc{
+            width: 70%;
+        } */
+        .ftsection .des{
+           width: 100%;
+            margin: 100px 50px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+         .des .desc{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 50vh;
+            font-size: 40px;
+        }
+     .vertical-desc {
+        position: relative;
+        top: 30px;
+        font-size: 40px;
+        width: 90%;
+        color: rgb(80, 80, 80);
+        /* text-align: center; */
+        margin-left: 40px;
+        transition: all 0.7s ease-in-out;
+    }
         .ftsection .box{
             background: rgb(83, 65, 32);
             width: 250px;
@@ -971,16 +997,7 @@ form .form-row .textarea{
            
             border-radius: 10px;
         }
-        .ftsection .des{
-            margin: 100px 50px;
-            margin-right: 200px;
-            
-            margin-left: 150px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-        }
+    
         .ftsection.image-top{
            width: 150px; 
            position: relative;
@@ -1282,7 +1299,7 @@ width: 100%;
     position: relative;
     top: 30px;
     font-size: 25px;
-    width: 500px;
+    width: 600px;
     color: gray;
     /* text-align: center; */
     margin-left: -70px;
