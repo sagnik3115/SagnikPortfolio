@@ -18,24 +18,44 @@
             /* transition: all 1s ease-in-out; */
         }  
           nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 70px;
+            
+            height: 80px;
+           
             font-family: 'Poppins', sans-serif;
-            background-color: rgb(208, 235, 239);
-            color: rgb(10, 11, 11);
+            /* background-color: rgb(10, 82, 95); */
+            background-color: rgb(174 223 230);
+            color: rgb(17, 17, 18);
             font-weight: bold;
             position: fixed ;
             top: 0;
             width: 100%;
             z-index: 100;
         }
+        .nav{
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            height: 100%;
+        }
         nav ul{
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            margin: 0px 10px;
+        }
+        nav .menu{
+            display: none;
+        }
+        .navmenu{
+            visibility: hidden;
+          /* z-index: -100; */
+
+        }
+        .icon{
+            z-index: 10000;
         }
         nav ul li{
             list-style: none;
@@ -45,18 +65,22 @@
         nav ul li a{
             position: relative;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 23px;
             text-decoration: none;
-            color: rgb(20, 20, 20);
-            padding: 18px 40px;
+            color: rgb(17, 17, 17);
+            padding: 18px 31px;
 
+        }
+        nav ul i{
+           font-size: 2vw;
+           display: none;
         }
         nav ul li a:hover{
             color: rgb(164, 195, 195);
             border-bottom: 3px solid aliceblue;
-            transition-duration: 0.2s;
+            
+            transition: all 0.2s ease-in-out;
         }
-        
         .left{
             font-size: 2rem;
         }
@@ -325,6 +349,89 @@
         }
    }
 
+
+
+
+       
+   /* dark */
+   nav .right ul li .mode{
+   width: 60px;
+   height: 40px;
+   
+   background-color: rgba(255, 255, 255, 0) ;
+   background-image: url(static/night-mode.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   transition: all 0.7s ease-in-out;
+   }
+   nav .right ul li .mode:hover{
+    cursor: pointer;
+   
+   }
+   .dark{
+/*     background-color: #000; */
+    color: aliceblue;
+    /* transition: all 0.7s ease-in-out; */
+     
+/*     .web{
+        background-image: url("static/dark-bg.avif");
+        background-size: cover;
+         transition: all 0.7s ease-in-out; 
+    } */
+       
+            background-color: rgba(250, 235, 215, 0);
+           
+            background-image: url("static/dark-bg.avif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-position: center;  
+            transition: all 0.7s ease-in-out;
+            
+         
+    .right ul li .mode{
+        width: 60px;
+      height: 40px;
+     background-color: rgba(240, 248, 255, 0);
+     background-image: url("static/light-mode.png");
+      }
+    .copy{
+        color: #000;
+    }
+    .social_head{
+        color: #000;
+    }
+    
+     .input-data label{
+ 
+     color: rgb(17, 17, 17);
+ 
+      }
+      .contact{
+        color: #000;
+      }
+    .hr{
+
+            background-color:rgb(168, 224, 234) ;
+           
+        }
+
+        .vertical-title a{
+            color: rgb(246, 244, 244);
+            
+        }
+        .vertical-desc{
+           
+             color: rgb(202, 200, 200);
+             
+
+        }
+   }
+
+
+   .elfsight-app-74a45525-4d1d-438c-b9d7-4e55f14f4377{
+    width: 100px;
+   }
     </style>
 </head>
 <body>
@@ -332,14 +439,15 @@
     <nav>
         <div class="left">SAGNIK's Portfolio</div>
         <div class="right">
-            <ul> 
-                <li><div class="mode" onclick="Dark()"></div></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="index.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
+               <ul class="comnav" > 
+                        <li><div class="mode" onclick="Dark()"></div></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                        <!-- <i class="ri-menu-3-fill" onclick="onClickMenu()" ></i>   -->
+                    </ul>
         </div>
        </nav>
   </header> 
@@ -347,7 +455,7 @@
     <div class="first">
         <div class="ser-intro">
             <video autoplay loop muted>
-             <source src="/static/ser-intro.mp4">
+             <source src="static/ser-intro.mp4">
             </video>
         </div>
         <div class="ser-head">
